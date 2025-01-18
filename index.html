@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edward(JeongHan) Chang - Portfolio</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font (Example) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-logo">JeongHan(Edward) Chang</div>
+      <ul class="nav-menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="fade-in">
+    <div class="hero-content">
+      <!-- Replace with your photo URL -->
+      <img
+        src="https://via.placeholder.com/200"
+        alt="Profile Photo"
+        class="profile-picture"
+      />
+      <h1>Hi, I'm JeongHan(Edward) Chang</h1>
+      <p>
+        A passionate Web Developer focusing on user-centric interfaces
+        and data-driven solutions. I love exploring new technologies
+        and turning ideas into reality.
+      </p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section fade-in">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I’m enthusiastic about creating scalable solutions and leveraging data.
+        Here are some areas of interest I love exploring:
+      </p>
+      <ul class="interests-list">
+        <li>User Experience (UX) Design</li>
+        <li>Front-End Development (React, Vue)</li>
+        <li>Machine Learning & Data Analysis</li>
+        <li>API Integration</li>
+        <li>Creative Coding</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Latest Projects Section -->
+  <section id="projects" class="section fade-in">
+    <div class="container">
+      <h2>Latest Projects</h2>
+      <div class="projects-grid">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <img
+            src="https://via.placeholder.com/400x250"
+            alt="Project 1"
+          />
+          <h3>Project One</h3>
+          <p>
+            A brief description of Project One. 
+            Showcase your role, tech stack, and achievements.
+          </p>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <img
+            src="https://via.placeholder.com/400x250"
+            alt="Project 2"
+          />
+          <h3>Project Two</h3>
+          <p>
+            A brief description of Project Two.
+            Highlight your contributions and results.
+          </p>
+        </div>
+        <!-- Project Card 3 -->
+        <div class="project-card">
+          <img
+            src="https://via.placeholder.com/400x250"
+            alt="Project 3"
+          />
+          <h3>Project Three</h3>
+          <p>
+            A brief description of Project Three.
+            Include relevant links or demos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section">
+    <div class="container">
+      <h2>Resume</h2>
+      <p>
+        Want a quick overview of my education, experience, and skills? Click below to view or download my resume.
+      </p>
+      <!-- Buttons Row -->
+      <div class="resume-buttons">
+        <button id="resume-toggle" class="resume-button">View Resume</button>
+        <a 
+          href="Resume.pdf" 
+          class="resume-button download-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download Resume
+        </a>
+      </div>
+  
+      <!-- Hidden Resume Panel -->
+      <div id="resume-panel" class="resume-panel">
+        </p>
+        <!-- Embed PDF Viewer -->
+        <iframe src="Resume.pdf" title="Resume" class="resume-iframe"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies & Activities Section -->
+  <section id="hobbies" class="section fade-in">
+    <div class="container">
+      <h2>Hobbies & Activities</h2>
+      <p>
+        When I'm not coding, I love exploring the outdoors,
+        cooking new recipes, and experimenting with music production.
+      </p>
+      <ul class="hobbies-list">
+        <li>Photography</li>
+        <li>Hiking & Camping</li>
+        <li>Cooking</li>
+        <li>Music Production</li>
+        <li>Travel & Culture</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section fade-in">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>
+        Ready to connect or have a question? I’d love to hear from you.
+        Please fill out the form below or use the direct info provided.
+      </p>
+
+      <!-- Direct Contact Info -->
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:jeonghan.chang8@outlook.com">jeonghan.chang8@outlook.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/jeonghanchang" target="_blank" rel="noopener">JeongHan(Edward) Chang</a></p>
+        <p><strong>Location:</strong> Ontario, Canada & Remote-Friendly</p>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <div class="form-group">
+          <label for="form-name">Name</label>
+          <input type="text" id="form-name" required />
+        </div>
+        <div class="form-group">
+          <label for="form-email">Email</label>
+          <input type="email" id="form-email" required />
+        </div>
+        <div class="form-group">
+          <label for="form-message">Message</label>
+          <textarea id="form-message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="send-button">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2025 JeongHan Chang — All Rights Reserved.
+    </p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
