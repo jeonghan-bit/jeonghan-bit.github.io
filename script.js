@@ -82,4 +82,3 @@ document.addEventListener('DOMContentLoaded', function() {
       resumePanel.classList.toggle('open');
     });
   });
-
