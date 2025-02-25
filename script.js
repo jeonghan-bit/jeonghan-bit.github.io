@@ -49,6 +49,30 @@ document.addEventListener('DOMContentLoaded', function() {
     window.open('Resume.pdf', 'resumePopup', features);
   }
 
+  function showHobbyImages(hobby) {
+    const galleryContainer = document.getElementById("hobby-gallery");
+    galleryContainer.innerHTML = ""; // Clear previous images
+
+    // Define multiple images for each hobby
+    const hobbyImages = {
+        "photography": ["images/hobbies/photography1.jpg", "images/hobbies/photography2.jpg"],
+        "hiking": ["images/hobbies/hiking1.jpg", "images/hobbies/hiking2.jpg"],
+        "cooking": ["images/hobbies/cooking1.jpg"],
+        "skiing": ["images/hobbies/music1.jpg"],
+        "travel": ["images/hobbies/travel1.jpg"]
+    };
+
+    // Check if images exist for the selected hobby
+    if (hobbyImages[hobby]) {
+        hobbyImages[hobby].forEach(imgSrc => {
+            let imgElement = document.createElement("img");
+            imgElement.src = imgSrc;
+            imgElement.alt = hobby + " image";
+            galleryContainer.appendChild(imgElement);
+        });
+    }
+}
+
   document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('resume-toggle');
     const resumePanel = document.getElementById('resume-panel');
@@ -58,3 +82,4 @@ document.addEventListener('DOMContentLoaded', function() {
       resumePanel.classList.toggle('open');
     });
   });
+

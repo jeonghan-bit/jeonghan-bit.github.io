@@ -70,60 +70,80 @@
   
   /* -----------------------------
      Hero Section
-  -------------------------------- */
-  #hero {
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 3rem 1rem;
-    background: linear-gradient(135deg, #a2c7e5, #b8e1ec);
-  }
+-------------------------------- */
+#hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left; /* Align text to the left */
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #a2c7e5, #b8e1ec);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Space between profile picture and text */
+  max-width: 900px; /* Increase the max width for better alignment */
+}
+
+/* Profile Picture (Left) */
+.profile-picture {
+  width: 380px; /* Increased size */
+  height: 380px; /* Increased size */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  flex-shrink: 0; /* Prevent image from resizing */
+}
+
+/* Text Content (Right) */
+.hero-text {
+  font-size: 0.1rem;
+  flex: 1; /* Allow text to take remaining space */
+}
+
+#hero h1 {
+  font-size: 2.5rem; /* Slightly larger for better emphasis */
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+#hero p {
+  font-size: 1.2rem; /* Increased size for readability */
+  margin-bottom: 1rem;
+}
   
-  .hero-content {
-    max-width: 600px;
-  }
-  
-  .profile-picture {
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #fff;
-    margin-bottom: 1rem;
-  }
-  
-  #hero h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-  }
-  
-  #hero p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* -----------------------------
-     About Section
-  -------------------------------- */
-  #about h2 {
-    margin-bottom: 1.5rem;
-  }
-  
-  .interests-list {
-    list-style: disc;
-    margin-top: 2rem;
-    text-align: left;
-    max-width: 600px;
-    margin: 2rem auto 0 auto;
-    padding-left: 1rem;
-  }
-  
-  .interests-list li {
-    margin-bottom: 0.5rem;
-  }
+/* -----------------------------
+   Skills & Expertise Section
+-------------------------------- */
+#skills h2 {
+  margin-bottom: 1.5rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skills-list li {
+  background-color: #f8f8f8;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.skills-list li:hover {
+  background-color: #e1e1e1;
+}
   
   /* -----------------------------
      Projects Section
@@ -190,37 +210,63 @@
   }
   
   /* -----------------------------
-     Hobbies Section
-  -------------------------------- */
-  #hobbies {
-    background-color: #f0f0f0;
-  }
-  
-  #hobbies h2 {
-    margin-bottom: 1.5rem;
-  }
-  
-  .hobbies-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-  
-  .hobbies-list li {
-    background-color: #fff;
-    margin: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    border-radius: 20px;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
-  }
-  
-  .hobbies-list li:hover {
-    background-color: #e1e1e1;
-  }
-  
+ Hobbies & Interests Section
+-------------------------------- */
+#hobbies h2 {
+  margin-bottom: 1.5rem;
+}
+
+.hobbies-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 10px;
+}
+
+.hobbies-list li {
+  background-color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.hobbies-list li:hover {
+  background-color: #e1e1e1;
+  transform: scale(1.05);
+}
+
+/* Hobby Image Gallery */
+.hobby-gallery-container {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.hobby-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hobby-gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
   /* -----------------------------
      Contact Section
   -------------------------------- */
@@ -243,7 +289,7 @@
     text-decoration: underline;
   }
   
-  .contact-form {
+  /* .contact-form {
     max-width: 600px;
     margin: 0 auto;
     text-align: left;
@@ -282,13 +328,13 @@
   
   .send-button:hover {
     background-color: #555;
-  }
+  } */
   
   /* -----------------------------
      Footer
   -------------------------------- */
   footer {
-    background-color: #fff;
+    background-color: #fafafa;
     text-align: center;
     padding: 1rem;
     margin-top: 3rem;

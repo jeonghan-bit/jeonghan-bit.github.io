@@ -41,78 +41,101 @@
         alt="Profile Photo"
         class="profile-picture"
       />
-      <h1>Hi, I'm JeongHan(Edward) Chang</h1>
-      <p>
-        A data-driven analyst with a natural curiosity for patterns—both in data and in life. With a strong foundation in statistics, 
-        machine learning, and business intelligence, I thrive on transforming raw data into meaningful insights that drive impactful decisions. 
-        Beyond the numbers, I love exploring how data intersects with human behavior, creativity, and real-world problem-solving.
-      </p>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section fade-in">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        When I’m not deep-diving into datasets or building predictive models, you’ll find me capturing stories through my camera lens, 
-        cooking up a new recipe, or getting lost in a hiking trail. Whether it’s automating analytics workflows, crafting compelling visual narratives, 
-        or discovering new music, I believe in the power of blending logic with creativity to bring fresh perspectives to the table.
-      </p>
-      <ul class="interests-list">
-        <li>Deep Learning & NLP</li>
-        <li>Machine Learning & Data Analysis</li>
-        <li>Data Visualization & Storytelling</li>
-        <li>Big Data & Cloud Computing</li>
-        <li>API Integration</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Latest Projects Section -->
-  <section id="projects" class="section fade-in">
-    <div class="container">
-      <h2>Latest Projects</h2>
-      <div class="projects-grid">
-        <!-- Project Card 1 -->
-        <div class="project-card">
-          <img
-            src="https://via.placeholder.com/400x250"
-            alt="Project 1"
-          />
-          <h3>Online Ordering Website Development</h3>
-          <p>
-            A brief description of Project One. 
-            Showcase your role, tech stack, and achievements.
-          </p>
-        </div>
-        <!-- Project Card 2 -->
-        <div class="project-card">
-          <img
-            src="https://via.placeholder.com/400x250"
-            alt="Project 2"
-          />
-          <h3>Customer Prediction & Recommendation System</h3>
-          <p>
-            A brief description of Project Two.
-            Highlight your contributions and results.
-          </p>
-        </div>
-        <!-- Project Card 3 -->
-        <div class="project-card">
-          <img
-            src="https://via.placeholder.com/400x250"
-            alt="Project 3"
-          />
-          <h3>ASA DataFest:Scotiabank Mobile App Review LLM Analysis/h3>
-          <p>
-            A brief description of Project Three.
-            Include relevant links or demos.
-          </p>
-        </div>
+      <div class="hero-text">
+        <h1>Hi, I'm JeongHan(Edward) Chang</h1>
+        <p>
+          A data-driven analyst with a keen eye for patterns—both in data and life. 
+        </p>
+        <p>
+          With expertise in statistics, machine learning, and business intelligence, 
+          I turn raw data into actionable insights that drive impactful decisions. 
+        </p>
+        <p>
+          I'm passionate about the intersection of data, human behavior, and real-world problem-solving.
+        </p>
       </div>
+      </p>
     </div>
   </section>
+
+ <!-- My Skills & Expertise Section -->
+<section id="skills" class="section fade-in">
+  <div class="container">
+    <h2>My Skills & Expertise</h2>
+    <p>
+      Whether it’s automating analytics workflows, crafting compelling visual narratives, or building predictive models,
+      I believe in the power of blending logic with creativity to bring fresh perspectives to the table.
+    </p>
+    <ul class="skills-list">
+      <li>Deep Learning & NLP</li>
+      <li>Machine Learning & Data Analysis</li>
+      <li>Data Visualization & Storytelling</li>
+      <li>Big Data & Cloud Computing</li>
+      <li>API Integration & Automation</li>
+    </ul>
+  </div>
+</section>
+
+ <!-- Latest Projects Section -->
+<section id="projects" class="section fade-in">
+  <div class="container">
+    <h2>Latest Projects</h2>
+    <div class="projects-grid">
+
+      <!-- Project Card 1 -->
+      <a href="https://github.com/jeonghan-bit" target="_blank" class="project-card">
+        <img src="https://via.placeholder.com/400x250" alt="Project 1" />
+        <h3>Online Ordering Website Development</h3>
+        <p>
+          A brief description of Project One. 
+          Showcase your role, tech stack, and achievements.
+        </p>
+      </a>
+
+      <!-- Project Card 2 -->
+      <a href="https://github.com/jeonghan-bit" target="_blank" class="project-card">
+        <img src="https://via.placeholder.com/400x250" alt="Project 2" />
+        <h3>Customer Prediction & Recommendation System</h3>
+        <p>
+          A brief description of Project Two.
+          Highlight your contributions and results.
+        </p>
+      </a>
+
+      <!-- Project Card 3 -->
+      <a href="https://github.com/jeonghan-bit" target="_blank" class="project-card">
+        <img src="https://via.placeholder.com/400x250" alt="Project 3" />
+        <h3>Scotiabank Mobile App Review LLM Analysis</h3>
+        <p>
+          A brief description of Project Three.
+          Include relevant links or demos.
+        </p>
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Hobbies & Personal Interests Section -->
+<section id="hobbies" class="section fade-in">
+  <div class="container">
+    <h2>Hobbies & Personal Interests</h2>
+    <p>When I’m not deep-diving into datasets or coding, you’ll find me capturing stories through my camera lens,
+      cooking up a new recipe, or getting lost on a hiking trail. I love exploring creativity outside of work.
+      Click on any hobby below to see related pictures!</p>
+    <ul class="hobbies-list">
+      <li onclick="showHobbyImages('photography')">📸 Photography</li>
+      <li onclick="showHobbyImages('hiking')">🥾 Hiking</li>
+      <li onclick="showHobbyImages('skiing')">⛷️ Skiing</li>
+      <li onclick="showHobbyImages('cooking')">🥄 Cooking</li>
+      <li onclick="showHobbyImages('travel')">✈️ Travel</li>
+    </ul>
+    <!-- Hobby Image Gallery -->
+    <div id="hobby-gallery-container" class="hobby-gallery-container">
+      <div id="hobby-gallery" class="hobby-gallery"></div>
+    </div>
+  </div>
+</section>
 
   <!-- Resume Section -->
   <section id="resume" class="section">
@@ -140,23 +163,6 @@
     </div>
   </section>
 
-  <!-- Hobbies & Activities Section -->
-  <section id="hobbies" class="section fade-in">
-    <div class="container">
-      <h2>Hobbies & Activities</h2>
-      <p>
-        When I'm not coding, I love exploring the outdoors,
-        cooking new recipes, and experimenting with music production.
-      </p>
-      <ul class="hobbies-list">
-        <li>Photography</li>
-        <li>Hiking & Camping</li>
-        <li>Cooking</li>
-        <li>Music Production</li>
-        <li>Travel & Culture</li>
-      </ul>
-    </div>
-  </section>
 
   <!-- Contact Section -->
   <section id="contact" class="section fade-in">
@@ -169,12 +175,12 @@
 
       <!-- Direct Contact Info -->
       <div class="contact-info">
-        <p><strong>Email:</strong> <a href="mailto:jeonghan.chang8@outlook.com">jeonghan.chang8@outlook.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/jeonghanchang" target="_blank" rel="noopener">JeongHan(Edward) Chang</a></p>
-        <p><strong>Location:</strong> Ontario, Canada & Remote-Friendly</p>
+        <p><strong>✉️ Email:</strong> <a href="mailto:jeonghan.chang8@outlook.com">jeonghan.chang8@outlook.com</a></p>
+        <p><strong>🔗 LinkedIn:</strong> <a href="https://linkedin.com/in/jeonghanchang" target="_blank" rel="noopener">JeongHan(Edward) Chang</a></p>
+        <p><strong>📍 Location:</strong> Ontario, Canada & Remote-Friendly</p>
       </div>
 
-      <!-- Contact Form -->
+      <!-- Contact Form
       <form class="contact-form" onsubmit="submitForm(event)">
         <div class="form-group">
           <label for="form-name">Name</label>
@@ -191,7 +197,7 @@
         <button type="submit" class="send-button">Send Message</button>
       </form>
     </div>
-  </section>
+  </section> -->
 
   <!-- Footer -->
   <footer>
